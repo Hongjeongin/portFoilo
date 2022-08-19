@@ -1,6 +1,8 @@
 from flask import url_for, Flask, render_template, request, send_file, redirect
-import database
 import sys
+import lxml.html as lh
+import io
+
 application = Flask(__name__)
 
 @application.route("/")
